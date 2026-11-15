@@ -1,0 +1,14 @@
+name = 'metriz'
+main = "worker.js"
+compatibility_date = "2026-09-08"
+
+[assets]
+directory = "./public"
+binding = "ASSETS"
+# همه‌ی درخواست‌ها اول از Worker رد می‌شوند تا /data/ پشت لاگین بماند
+run_worker_first = true
+
+[[d1_databases]]
+binding = "DB"
+database_name = "constructionpricelist-db"
+database_id = "cd023571-acf8-41ab-9e23-42672a817e26"
